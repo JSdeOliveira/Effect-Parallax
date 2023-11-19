@@ -1,0 +1,81 @@
+/* Configuração padrão */
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #777;
+    height: 100%; /* truque parallax */  
+}
+
+nav {
+    opacity: 0.7;
+}
+
+.conteudo {
+    color: #777;
+    background-color: rgb(233, 230, 230);
+    text-align: justify;
+    opacity: 0.7;
+    padding: 50px 80px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+/* configuração padrão */
+
+/* Efeito Parallax */
+.container1, .container2, .container3, .container4 {
+    /* border: solid 1px red; */
+    position: relative; /* permite usar o position absolute */
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container1 {
+    background-image: url(imagem1.jpg);
+}
+
+.container2 {
+    background-image: url(image2.jpg);
+}
+
+.container3 {
+    background-image: url(imagem4.jpg);
+}
+
+.container4 {
+    background-image: url(imagem5.jpg);
+}
+
+.conteudo-titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%; 
+    text-align: center;   
+}
+
+.conteudo-titulo span.titulo {
+    background-color: #a68f97b1;
+    color: white;
+    font-weight: 800;
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 5px;  
+    text-transform: uppercase;
+}
